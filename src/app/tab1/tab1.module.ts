@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login.page';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -14,4 +15,7 @@ import { Tab1Page } from './tab1.page';
   ],
   declarations: [Tab1Page]
 })
-export class Tab1PageModule {}
+
+export class Tab1PageModule {
+  
+}

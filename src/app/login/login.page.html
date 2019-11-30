@@ -1,0 +1,41 @@
+<style type="text/css">
+.login-page{
+  height: 100%;
+  background: url('assets/bg-pattern.jpg');
+}
+.login-page ion-card{
+  background: #fff;
+}
+</style>
+
+<ion-grid class="login-page">
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <ion-card id = "login-card">
+        
+        <ion-card-header>
+          <ion-card-title>Login</ion-card-title>
+        </ion-card-header>
+
+        <form padding>
+          <ion-list>
+
+            <ion-item>
+              <ion-label position="floating">Usuário</ion-label>
+              <ion-input name="usuario" [(ngModel)]="usuario"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Senha</ion-label>
+              <ion-input type="password" name="password" [(ngModel)]="senha"></ion-input>
+            </ion-item>
+
+            <ion-button expand="block" style="margin-top: 20px;" (click)="onLogin()">
+              Entrar
+            </ion-button>
+
+          </ion-list>
+        </form>
+
+      </ion-card>
+    </ion-row>
+  </ion-grid>
